@@ -372,3 +372,82 @@
         height: 60px;
     }
 }   
+
+.donats {
+    height: 462px;
+    background: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.donats-content {
+    width: 915px;
+    height: 282px;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.06em;
+}
+
+.donat-content-pay {
+    width: 380px;
+    height: 282px;
+
+    & h3 {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        color: #545454;
+        margin: 0px;
+
+    }
+    
+    & h5 {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        color: #545454;
+
+    }
+
+    & p {
+        font-family: 'Arial';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #B2B2B2;
+    }
+}
+
+.donat_number {
+    width: 349px;
+    height: 43px;
+    background: #F1CDB3;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+
+    img {
+        padding: 10px 15px;
+    }
+
+    & h4 {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        color: #545454;
+    }
+}
+
+.footer {
+    height: 350px;
+    background: url(/shelter/assets/images/footer-background.jpg);
+    background-repeat: round;
+}
