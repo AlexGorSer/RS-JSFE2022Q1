@@ -145,3 +145,50 @@
     height: 728px;
     margin-top: 119px;
 }
+
+.about {
+    height: 588px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .about_content {
+        width: 1200px;
+        height: 408px;
+        display: flex;
+        justify-content:space-evenly;
+    }
+}
+
+.about_content_text {
+    width: 430px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0px;
+
+    & h3 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    color: #545454;
+    letter-spacing: 0.06em;
+    margin: 0px;
+    width: 370px;
+    height: 90px;
+    }
+
+    & p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #4C4C4C;
+    margin: 0px;
+    margin-top: 25px;
+    }
+}
