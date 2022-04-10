@@ -192,3 +192,119 @@
     margin-top: 25px;
     }
 }
+
+.pets {
+    height: 877px;
+    background: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pet-content{
+    width: 1200px;
+    height: 697px;
+    & h3 {
+        width: 400px;
+        height: 90px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: #545454;
+        text-align: center;
+        margin: 0px auto; 
+        margin-bottom: 60px;
+    }
+}
+
+.pet_slider {
+    width: 1200px;
+    height: 435px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button_slider {
+    background-color: #F6F6F6;
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+.pet_card {
+    width: 270px;
+    height: 435px;
+    background: #FAFAFA;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+
+        .pets-button {
+            background-color: #F1CDB3;
+
+            cursor: pointer;
+        }
+    }
+
+    .pets-name {
+        width: 74px;
+        height: 23px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.06em;
+        color: #545454;
+    
+    }   
+    .pets-button {
+        border: 2px solid #F1CDB3;
+        box-sizing: border-box;
+        border-radius: 100px;
+        width: 187px;
+        height: 52px;
+        background-color: #FAFAFA;
+        padding: 15px 45px;
+
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+
+    }
+} 
+
+.pet-content_button {
+    width: 261px;
+    height: 52px;
+    margin: 0px auto;
+    margin-top: 60px;
+
+    & button {
+        width: 261px;
+        height: 52px;
+        background: #F1CDB3;
+        border-radius: 100px;
+        
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+    
+        letter-spacing: 0.06em;
+        color: #292929;
+    }
+
+}
