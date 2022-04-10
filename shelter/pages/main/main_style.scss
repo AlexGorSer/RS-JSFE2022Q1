@@ -450,4 +450,72 @@
     height: 350px;
     background: url(/shelter/assets/images/footer-background.jpg);
     background-repeat: round;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 1200px;
+    height: 310px;
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        margin: 0px;
+    }
+
+    h4 {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        margin: 0px;
+        letter-spacing: 0.06em;
+
+        color: #F1CDB3;
+    }
+}
+
+.contacts {
+    width: 278px;
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    img {
+        padding-right: 20px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+.location {
+    width: 302px;
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img {
+        padding-right: 20px;
+    }
+    div {
+        display: flex;
+        align-items: center;
+    }
+
 }
