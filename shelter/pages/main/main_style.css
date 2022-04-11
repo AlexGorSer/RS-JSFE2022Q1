@@ -4,7 +4,7 @@
 }
 
 .background-start {
-  background: url(/shelter/assets/images/start-screen-gradient-background.jpg);
+  background: url(../../assets/images/start-screen-gradient-background.jpg);
   background-repeat: round;
 }
 
@@ -563,7 +563,7 @@
 
 .footer {
   height: 350px;
-  background: url(/shelter/assets/images/footer-background.jpg);
+  background: url(../../assets/images/footer-background.jpg);
   background-repeat: round;
   display: -webkit-box;
   display: -ms-flexbox;
