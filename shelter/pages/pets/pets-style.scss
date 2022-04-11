@@ -7,11 +7,15 @@
 .wrapper {
     width: 1280px;
     margin: 0px auto;
+
 }
 
 .header-conteiner {
+
     background: #FFFFFF;
     margin: 0px auto;
+
+    
 }
 .header {
     width: 1200px;
@@ -20,12 +24,17 @@
     justify-content: space-between;
     align-items: center;
     margin: 0px auto;
+
 } 
 
 
 .header_logo {
     letter-spacing: 0.06em;
     
+    
+    a {
+        text-decoration: none;
+    }
 
     & h1 {
     font-family: 'Georgia';
@@ -134,7 +143,6 @@
         line-height: 115%;
         margin: 0px;
         letter-spacing: 0.06em;
-
         color: #F1CDB3;
     }
 }
@@ -145,15 +153,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    img {
-        padding-right: 20px;
-    }
-
-    div {
+    
+    a {
+        text-decoration: none;
         display: flex;
         align-items: center;
     }
+
+     img {
+        padding-right: 20px;
+    }
+    
+
+    
 
 }
 
@@ -163,9 +175,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    a {
+        text-decoration: none;
+    }
+
     img {
         padding-right: 20px;
     }
+
     div {
         display: flex;
         align-items: center;
@@ -223,6 +241,10 @@
     width: 340px;
     height: 52px;
 
+
+    div:hover{
+        background: #F1CDB3;
+    }
     div {
         display: flex;
         justify-content: center;
@@ -247,7 +269,7 @@
         
     }
 
-    .button-activ {
+    .button-activ{
         background: #F1CDB3;
     }
     .buttons-no-activ{
@@ -267,6 +289,7 @@
 
     &:hover {
         cursor: pointer;
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 
         .pets-button {
             background-color: #F1CDB3;

@@ -32,6 +32,10 @@
   letter-spacing: 0.06em;
 }
 
+.header_logo a {
+  text-decoration: none;
+}
+
 .header_logo h1 {
   font-family: 'Georgia';
   font-style: normal;
@@ -138,32 +142,29 @@
   margin: 0px;
 }
 
-.button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 15px 45px;
+.button_content {
   width: 207px;
   height: 52px;
-  background: #F1CDB3;
-  border-radius: 100px;
 }
 
-.button a {
+.button_content button {
+  width: 207px;
+  height: 52px;
   font-family: 'Georgia';
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 130%;
-  text-decoration: none;
+  background: #F1CDB3;
+  border-radius: 100px;
+  border: transparent;
+  letter-spacing: 0.06em;
   color: #292929;
+}
+
+.button_content button:hover {
+  cursor: pointer;
+  background: #FDDCC4;
 }
 
 .img_puppy {
@@ -283,13 +284,15 @@
 }
 
 .button_slider {
-  background-color: #F6F6F6;
   width: 52px;
   height: 52px;
   border: 2px solid #F1CDB3;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   border-radius: 100px;
+  background: transparent;
+}
+
+.button_slider:hover {
+  background: #FDDCC4;
 }
 
 .pet_card {
@@ -311,6 +314,8 @@
 
 .pet_card:hover {
   cursor: pointer;
+  -webkit-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
 .pet_card:hover .pets-button {
@@ -358,6 +363,7 @@
   height: 52px;
   background: #F1CDB3;
   border-radius: 100px;
+  border: transparent;
   font-family: 'Georgia';
   font-style: normal;
   font-weight: 400;
@@ -365,6 +371,11 @@
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #292929;
+}
+
+.pet-content_button button:hover {
+  cursor: pointer;
+  background: #FDDCC4;
 }
 
 .help {
@@ -524,13 +535,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
 }
 
-.donat_number img {
+.donat_number div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.donat_number div img {
   padding: 10px 15px;
 }
 
-.donat_number h4 {
+.donat_number div h4 {
   font-family: 'Georgia';
   font-style: normal;
   font-weight: 400;
@@ -602,17 +624,18 @@
           justify-content: space-between;
 }
 
-.contacts img {
-  padding-right: 20px;
-}
-
-.contacts div {
+.contacts a {
+  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contacts img {
+  padding-right: 20px;
 }
 
 .location {
@@ -628,6 +651,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.location a {
+  text-decoration: none;
 }
 
 .location img {

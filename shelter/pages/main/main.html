@@ -15,15 +15,17 @@
                 <header>
                     <div class="header">
                         <div class="header_logo">
-                            <h1>Cozy House</h1>
-                            <p>Shelter for pets in Boston</p>
+                                <a href="#">
+                                    <h1>Cozy House</h1>
+                                    <p>Shelter for pets in Boston</p>
+                                </a>
                         </div>
                         <nav>
                             <div class="header_nav_menu">
                                 <div><a href="#" class="active">About the shelter </a></div>
-                                <div><a href="#">Our pets</a></div>
-                                <div><a href="#">Help the shelter</a></div>
-                                <div><a href="#">Contacts</a></div>
+                                <div><a href="/shelter/pages/pets/pets_page.html">Our pets</a></div>
+                                <div><a href="#help-block">Help the shelter</a></div>
+                                <div><a href="#contacts-block">Contacts</a></div>
                             </div>
                         </nav>
                     </div>
@@ -32,9 +34,11 @@
                         <div class="content"> 
                             <h2>Not only people need a house</h2>
                             <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-                            <div>
-                                <button class="button"><a href="#">Make a friend</a></button>
-                            </div>
+                            <a href="#pet-content-block">
+                                <div class="button_content">
+                                    <button>Make a friend</button>
+                                </div>
+                            </a>
                         </div>
 
                         <div class="img_puppy">
@@ -53,7 +57,7 @@
                 </div>
             </div>
         </section> 
-        <section class="pets">
+        <section class="pets" id="pet-content-block">
             <div class="pet-content">
                 <h3>Our friends who <br>
                     are looking for a house</h3>
@@ -75,11 +79,14 @@
                         </div>
                         <div><button class="button_slider">&#8594;</button> </div>
                     </div>
-                    <p class="pet-content_button"><button>Get  to know the rest</button>
-                    </p>
+                    <a href="/shelter/pages/pets/pets_page.html">
+                        <p class="pet-content_button">
+                            <button>Get  to know the rest</button>
+                        </p>
+                    </a>
             </div>
         </section>
-        <section class="help">
+        <section class="help" id="help-block">
             <div class="help-content">
                 <h3>How you can help
                     our shelter</h3>
@@ -104,36 +111,54 @@
                 <div class="donat-content-pay">
                     <h3>You can also <br> make a donation</h3>
                     <h5>Name of the bank / Type of bank account</h5>
-                    <div class="donat_number">
-                        <img src="/shelter/assets/icons/credit-card.svg" alt="">
-                        <h4>8380 2880 8028 8791 7435</h4>
+                    <a href="#"  class="donat_number">
+                    <div>
+                            
+                            <img src="/shelter/assets/icons/credit-card.svg" alt="">
+                             <h4>8380 2880 8028 8791 7435</h4>
+                            
                     </div>
+                </a>
                     <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                 </div>
             </div>
         </section>
-        <footer class="footer">
+        <footer class="footer" id="contacts-block">
             <div class="footer-content">
                 <div class="contacts">
                     <h3>For questions and suggestions</h3>
+                
                     <div>
-                        <img src="/shelter/assets/icons/icon-email.svg" alt="">
-                        <h4>email@shelter.com</h4>
+                        <a href="mailto:email@shelter.com">
+                            <img src="/shelter/assets/icons/icon-email.svg" alt="">
+                            <h4>email@shelter.com</h4>
+                        </a>
                     </div>
+                
+                
                     <div>
-                        <img src="/shelter/assets/icons/icon-phone.svg" alt="">
-                        <h4>+13 674 567 75 54</h4>
+                        <a href="tel:+13 674 567 75 54">
+                            <img src="/shelter/assets/icons/icon-phone.svg" alt="">
+                            <h4>+13 674 567 75 54</h4>
+                        </a>
                     </div>
+
                 </div>
                 <div class="location">
                     <h3>We are waiting for your visit</h3>
                     <div >
-                        <img src="/shelter/assets/icons/icon-marker.svg" alt="">
-                        <h4>1 Central Street, Boston (entrance from the store)</h4>
+                            
+                                <img src="/shelter/assets/icons/icon-marker.svg" alt="">
+                                <a href="https://goo.gl/maps/qPHcTqpn1rWaEwYe8" target="_blank">
+                                <h4>1 Central Street, Boston (entrance from the store)</h4>
+                            </a>
                     </div>
                     <div>
-                        <img src="/shelter/assets/icons/icon-marker.svg" alt="">
-                        <h4>18 South Park, London </h4>
+                        
+                            <img src="/shelter/assets/icons/icon-marker.svg" alt="">
+                        <a href="https://goo.gl/maps/Kkrqt6kNpiToYA5P6" target="_blank">
+                            <h4>18 South Park, London </h4>
+                        </a>
                     </div>
                 </div>
                 <div> <img src="/shelter/assets/images/footer-puppy.png" alt=""></div>

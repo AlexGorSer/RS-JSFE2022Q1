@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/shelter/pages/scss/normalize.css">
     <link rel="stylesheet" href="/shelter/pages/pets/pets-style.css">
-    <title>Our pet</title>
+    <title>Our pets</title>
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <div class="head-conteiner">
+            <div class="head-conteiner lip">
                 <header>
                     <div class="header">
                         <div class="header_logo">
-                            <h1>Cozy House</h1>
-                            <p>Shelter for pets in Boston</p>
+                                <a href="/shelter/pages/main/main.html">
+                                    <h1>Cozy House</h1>
+                                    <p>Shelter for pets in Boston</p>
+                                </a>
                         </div>
                         <nav>
                             <div class="header_nav_menu">
-                                <div><a href="#">About the shelter </a></div>
+                                <div><a href="/shelter/pages/main/main.html" >About the shelter </a></div>
                                 <div><a href="#" class="active">Our pets</a></div>
-                                <div><a href="#">Help the shelter</a></div>
-                                <div><a href="#">Contacts</a></div>
+                                <div><a href="/shelter/pages/main/main.html#help-block">Help the shelter</a></div>
+                                <div><a href="#contacts-block">Contacts</a></div>
                             </div>
                         </nav>
                     </div>
@@ -92,28 +94,42 @@
                     </div>
                 </div>
         </section>
-        <footer class="footer">
+        <footer class="footer" id="contacts-block">
             <div class="footer-content">
                 <div class="contacts">
                     <h3>For questions and suggestions</h3>
+                
                     <div>
-                        <img src="/shelter/assets/icons/icon-email.svg" alt="">
-                        <h4>email@shelter.com</h4>
+                        <a href="mailto:email@shelter.com">
+                            <img src="/shelter/assets/icons/icon-email.svg" alt="">
+                            <h4>email@shelter.com</h4>
+                        </a>
                     </div>
+                
+                
                     <div>
-                        <img src="/shelter/assets/icons/icon-phone.svg" alt="">
-                        <h4>+13 674 567 75 54</h4>
+                        <a href="tel:+13 674 567 75 54">
+                            <img src="/shelter/assets/icons/icon-phone.svg" alt="">
+                            <h4>+13 674 567 75 54</h4>
+                        </a>
                     </div>
+
                 </div>
                 <div class="location">
                     <h3>We are waiting for your visit</h3>
                     <div >
-                        <img src="/shelter/assets/icons/icon-marker.svg" alt="">
-                        <h4>1 Central Street, Boston (entrance from the store)</h4>
+                            
+                                <img src="/shelter/assets/icons/icon-marker.svg" alt="">
+                                <a href="https://goo.gl/maps/qPHcTqpn1rWaEwYe8" target="_blank">
+                                <h4>1 Central Street, Boston (entrance from the store)</h4>
+                            </a>
                     </div>
                     <div>
-                        <img src="/shelter/assets/icons/icon-marker.svg" alt="">
-                        <h4>18 South Park, London </h4>
+                        
+                            <img src="/shelter/assets/icons/icon-marker.svg" alt="">
+                        <a href="https://goo.gl/maps/Kkrqt6kNpiToYA5P6" target="_blank">
+                            <h4>18 South Park, London </h4>
+                        </a>
                     </div>
                 </div>
                 <div> <img src="/shelter/assets/images/footer-puppy.png" alt=""></div>
