@@ -866,8 +866,12 @@ body {
     height: 87px;
     margin: 0rem;
   }
+  .help-content .help-content_nav .pet-help-icons img {
+    width: 50px;
+    height: 50px;
+  }
   .help-content .help-content_nav .pet-help-icons p {
-    margin-top: 2rem;
+    margin: 0rem;
     font-size: 1.5rem;
     font-weight: 1.7rem;
   }
