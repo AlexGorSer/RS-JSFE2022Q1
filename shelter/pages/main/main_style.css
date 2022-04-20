@@ -717,7 +717,7 @@ body {
     padding: 0rem 0rem 8rem 0rem;
   }
   .pet_card {
-    margin: 0rem;
+    margin: 0rem 1.6rem;
   }
   .pet_card:nth-child(4) {
     display: none;
@@ -752,9 +752,12 @@ body {
   .footer-content .location {
     margin-top: 0rem;
   }
+    .pet_slider {
+    padding: 0rem 3rem 0rem 3rem;
+  }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 767px) {
   .wrapper {
     padding: 0rem 1rem 0rem 1rem;
   }
