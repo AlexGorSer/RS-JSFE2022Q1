@@ -754,7 +754,7 @@ body {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
   .wrapper {
     padding: 0rem 1rem 0rem 1rem;
   }
@@ -774,10 +774,11 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 300px;
     height: 100%;
   }
   .start-screen .content h2 {
-    width: 76%;
+    width: 200px;
     text-align: center;
     font-size: 2.8rem;
     line-height: 3.2rem;
@@ -788,7 +789,7 @@ body {
     padding-top: 4.2rem;
     margin: 0rem;
     text-align: center;
-    width: 100%;
+    width: 300px;
   }
   .start-screen .content a {
     padding-top: 4.2rem;
@@ -809,12 +810,16 @@ body {
     text-align: center;
     margin: 0rem;
     padding: 0rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .about__content .about__content__text h3 {
     font-size: 2.5rem;
     line-height: 3.2rem;
   }
   .about__content .about__content__text p {
+    width: 270px;
     text-align: justify;
     padding: 2.2rem 1.5rem 0rem 1.5rem;
   }
@@ -824,6 +829,8 @@ body {
     height: 353.6px;
   }
   .active-button {
+    gap: 8rem;
+    padding-top: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -836,11 +843,14 @@ body {
     line-height: 3.2rem;
   }
   .pet-content .pet_slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0rem;
     padding: 4.2rem 1.5rem;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    gap: 2rem;
   }
   .pet-content .pet_slider .pet_card {
     margin: 0rem;
@@ -920,6 +930,13 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .footer-content .footer-dog {
     width: 260px;
