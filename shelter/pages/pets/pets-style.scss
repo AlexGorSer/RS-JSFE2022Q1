@@ -21,13 +21,12 @@ body {
     font-weight: $weight;
 }
 
-.header-conteiner {
-
-    background: #FFFFFF;
-    margin: 0px auto;
-
-    
+.fixed {
+    position: sticky;
+    background: white;
+    top: 0;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
