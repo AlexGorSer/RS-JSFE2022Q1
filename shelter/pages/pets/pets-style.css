@@ -173,7 +173,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 340px;
+  gap: 2rem;
   height: 52px;
 }
 
@@ -413,15 +413,20 @@ body {
   }
   .pets-content {
     padding: 4.2rem 0rem;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .pets-content .buttons {
+    gap: 1rem;
     margin-top: 4.2rem;
   }
   .pets-content h3 {
+    width: 100%;
     height: 100%;
     margin: 0rem;
     font-size: 2.5rem;
@@ -432,6 +437,12 @@ body {
     padding: 0rem;
     padding-top: 4.2rem;
     gap: 2rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .pets-content .pets_card .colune-4 {
     -webkit-box-orient: vertical;
@@ -450,6 +461,13 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .footer-content .footer-dog {
     padding-top: 4rem;

@@ -622,7 +622,7 @@ body {
         }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 720px){
 
     .wrapper{
         padding: 0rem 1rem 0rem 1rem;
@@ -699,6 +699,8 @@ body {
         }
     }
     .active-button{
+        gap: 8rem;
+        padding-top: 2rem;
         display: flex;
     }
     .pet-content {
@@ -709,10 +711,11 @@ body {
             line-height: 3.2rem;
         }
         .pet_slider {
+            flex-direction: column;
             margin: 0rem;
             padding: 4.2rem 1.5rem;
             justify-content: space-around;
-            gap: 2rem;
+            // gap: 2rem;
 
             .pet_card {
                 margin: 0rem;
@@ -814,6 +817,8 @@ body {
         padding: 3rem 0rem 0rem 0rem;
         text-align: center;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
 
         .footer-dog{
             width: 260px;
