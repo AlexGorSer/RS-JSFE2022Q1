@@ -357,11 +357,12 @@ body {
             margin: 0rem;
             padding: 0rem;
             padding-top: 4.2rem;
-            gap: 2rem;
+            gap: 3rem;
             flex-wrap: wrap;
             flex-direction: column;
 
             .colune-4{
+                gap: 3rem;
                 flex-direction: column;
             }
         }
