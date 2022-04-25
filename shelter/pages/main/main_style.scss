@@ -6,6 +6,97 @@ html {
 body {
     // width: 1280px;
     margin: auto;
+
+
+}
+._lock{
+    overflow: hidden;
+}
+@mixin text-style ($size, $height, $fontstyle: normal, $weight: 400,) {
+    font-size: $size;
+    line-height: $height;
+    font-style: $fontstyle;
+    font-weight: $weight;
+}
+
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(41, 41, 41, 0.6);
+    z-index: 1;
+}
+.popup_hide{
+    display: none;
+}
+.popup_in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    height: 500px;
+    border-radius: 9px;
+    background: #FAFAFA;
+
+    &:hover{
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    }
+}
+
+.popup_content {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 2rem 0rem 0rem;
+    padding: 0px;
+    width: 351px;
+    height: 362px;
+    gap: 4rem;
+    font-family: 'Georgia';
+
+    h3 {
+        margin: 0;
+        padding: 0;
+        @include text-style(3.5rem, 4.5rem,);
+        letter-spacing: 0.06em;
+
+    }
+    
+    h4 {
+        margin: 1rem 0rem 0rem 0rem;
+        @include text-style(2rem, 2.3rem,);
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+        letter-spacing: 0.06em;
+        @include text-style(1.5rem, 1.7rem,);
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0rem 0rem 0rem 1.5rem;
+        padding: 0;
+        letter-spacing: 0.06em;
+        
+        @include text-style(1.5rem, 1.7rem,);
+    }
+
+}
+
+.popup_img {
+    img{
+        border-radius: 9px 0px 0px 9px;
+        width: 50rem;
+        height: 49rem;
+    }
 }
 
 .wrapper {
@@ -14,12 +105,6 @@ body {
     
 }
 
-@mixin text-style ($size, $height, $fontstyle: normal, $weight: 400,) {
-    font-size: $size;
-    line-height: $height;
-    font-style: $fontstyle;
-    font-weight: $weight;
-}
 
 .section-start {
     background-image: url(../../assets/images/start-screen-gradient-background.jpg);
@@ -66,6 +151,7 @@ body {
     justify-content: space-between;
     width: 3rem;
     height: 2.2rem;
+    cursor: pointer;
 
     div {
         background-color: #F1CDB3;
@@ -636,12 +722,44 @@ body {
     }
     .header {
         padding: 3rem 4.3rem 0rem 0rem;
+        
+        .header__logo {
+            z-index: 5;
+        }
+
         .header__navigation-menu{
-            display: none;
+            background: #292929;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            // overflow: hidden;
+            top: 0%;
+            right: -100%;
+            width: 100%;
+            height: 100%;
+            gap: 4rem;
+            font-size: 3.2rem;
+            line-height: 5.1rem;
+            
+            transition: all 0.5s ease 0s;
+
+             &.active_nav {
+                right: 0%;
+            }
         }
     }
+
+
     .burger{
         display: flex;
+        z-index: 5;
+        transition: all 0.3s ease 0s;
+
+        &.burger_act{
+            transform: rotate(-90deg);
+        }
     }
     .start-screen{
         .content {
