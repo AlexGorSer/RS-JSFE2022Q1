@@ -97,6 +97,8 @@ const  burgerMenu = document.querySelector('.burger'),
        namePets = document.querySelectorAll('.pets-name'),
        petCard = document.querySelectorAll('.pet_card'),
        popup = document.querySelector('.popup'),
+       popupButton = document.querySelector('.popup_button'),
+       navButtons = document.querySelectorAll('.nav_bottons'),
        navConteiner = document.querySelector('.nav-conteiner');
 
     // Burger
@@ -108,14 +110,15 @@ const  burgerMenu = document.querySelector('.burger'),
         document.body.classList.toggle('_lock');
     });
 
-    navMenu.addEventListener('click', () => {
-        if (navMenu.classList.contains('active_nav')) {
-            burgerMenu.classList.remove('burger_act');
-            navMenu.classList.remove('active_nav');
-            document.body.classList.remove('_lock');
-            navConteiner.classList.remove('active_nav');
-        }
+    navConteiner.addEventListener('click', (e) => {
+      if (e.target === navConteiner || e.target === e.target.closest('.nav_bottons')) {
+        burgerMenu.classList.remove('burger_act');
+        navMenu.classList.remove('active_nav');
+        document.body.classList.remove('_lock');
+        navConteiner.classList.remove('active_nav');
+      };
     });
+
 
 
     // modal
@@ -130,11 +133,20 @@ const  burgerMenu = document.querySelector('.burger'),
         });
     });
 
-    popup.addEventListener('click', () =>{
+    popupButton.addEventListener('click', () =>{
         popup.classList.toggle('popup_hide');
         document.body.classList.toggle('_lock');
     });
-   
+    
+    popup.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        popup.classList.toggle('popup_hide');
+        document.body.classList.toggle('_lock');
+      };
+    });
+
+
+
 
 const petIMG = document.querySelector('.pet_img'),
       petsName = document.querySelector('.name_pet'),
