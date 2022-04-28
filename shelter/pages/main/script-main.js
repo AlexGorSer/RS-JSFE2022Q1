@@ -179,8 +179,22 @@ function searchDataPet(name) {
 });
 };
 
-//    petData.forEach((item, index, array) =>{
-//     if(item.name == namePets.innerHTML) {
-//         catCard(item);
-//     }
-// });
+// Carusel
+
+const btnLeft = document.querySelectorAll('.btn-left'),
+      petCardConteiner = document.querySelector('.pets_card-conteiner')
+      btnRight = document.querySelectorAll('.btn-right');
+
+
+
+      btnLeft.forEach(btn =>{
+        btn.addEventListener('click', () => {
+
+        });
+      });
+
+      btnRight.forEach(btn =>{
+        btn.addEventListener('click', () => {
+
+        });
+      });

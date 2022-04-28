@@ -19,6 +19,16 @@ body {
     font-weight: $weight;
 }
 
+
+// @keyframes move-right{
+//     form {left: 640px;}
+//     to { left: 0%;}
+// }
+// .transition-right {
+//     animation-name: move-right;
+//     animation-duration: 5s;
+// }
+
 .popup{
     position: fixed;
     top: 0;
@@ -321,7 +331,7 @@ body {
     padding: 0rem 4rem 0rem 4rem;
 
     .button_slider {
-    
+        cursor: pointer;
         width: 52px;
         height: 52px;
         border: 2px solid #F1CDB3;
@@ -379,6 +389,12 @@ body {
         }
     }
 } 
+
+.pets_card-conteiner {
+    display: flex;
+    overflow: hidden;
+    // width: 83%;
+}
 
 .pet-content {
     display: flex;
@@ -710,7 +726,7 @@ body {
         .pet_card {
             margin: 0rem 1.6rem;
         }
-        .pet_card:nth-child(4) {
+        .pet_card:nth-child(3) {
             display: none;
         }
 

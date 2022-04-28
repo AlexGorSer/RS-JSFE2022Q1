@@ -408,6 +408,7 @@ body {
 }
 
 .pet_slider .button_slider {
+  cursor: pointer;
   width: 52px;
   height: 52px;
   border: 2px solid #F1CDB3;
@@ -475,6 +476,13 @@ body {
 .pet_card:hover .pets-button {
   background-color: #F1CDB3;
   cursor: pointer;
+}
+
+.pets_card-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
 }
 
 .pet-content {
@@ -894,7 +902,7 @@ body {
   .pet_card {
     margin: 0rem 1.6rem;
   }
-  .pet_card:nth-child(4) {
+  .pet_card:nth-child(3) {
     display: none;
   }
   .help-content {
