@@ -21,10 +21,14 @@
                             </div>
                             <nav class="nav-conteiner">
                                 <div class="header__navigation-menu">
-                                    <div><a href="#" class="active">About the shelter </a></div>
-                                    <div><a href="../pets/pets_page.html">Our pets</a></div>
-                                    <div><a href="#help-block">Help the shelter</a></div>
-                                    <div><a href="#contacts-block">Contacts</a></div>
+                                    <div class="header__logo navlogo">
+                                            <h1>Cozy House</h1>
+                                            <p>Shelter for pets in Boston</p>
+                                </div>
+                                    <div><a href="#" class="active nav_bottons">About the shelter </a></div>
+                                    <div><a href="../pets/pets_page.html" class="nav_bottons">Our pets</a></div>
+                                    <div><a href="#help-block" class="nav_bottons">Help the shelter</a></div>
+                                    <div><a href="#contacts-block" class="nav_bottons">Contacts</a></div>
                                 </div>
                             </nav>
                             <div class="burger">
@@ -67,26 +71,28 @@
                     <h3>Our friends who <br>
                         are looking for a house</h3>
                         <div class="pet_slider">
-                            <div><button class="button_slider hidden">&#8592;</button> </div>
-                            <div class="pet_card"> 
-                                <img src="../../assets/images/pets/pets-katrine.png" alt="pet cat Katrine">
-                                <p class="pets-name">Katrine</p>
-                                <button class="pets-button">Learn more</button>
-                            </div>
-                            <div class="pet_card hidden">
-                                <img src="../../assets/images/pets/pets-jennifer.png" alt="Jennifer"> <p class="pets-name">Jennifer</p>
-                                <button class="pets-button">Learn more</button>
-                            </div>
-                            <div class="pet_card hidden">
-                                <img src="../../assets/images/pets/pets-woody.png" alt="Woody">
-                                <p class="pets-name">Woody</p>
-                                <button class="pets-button">Learn more</button>
+                            <div class="btn-left"><button class="button_slider hidden">&#8592;</button></div>
+                            <div class="pets_card-conteiner">
+                                <div class="pet_card"> 
+                                    <img src="../../assets/images/pets/pets-katrine.png" alt="pet cat Katrine">
+                                    <p class="pets-name">Katrine</p>
+                                    <button class="pets-button">Learn more</button>
+                                </div>
+                                <div class="pet_card hidden">
+                                    <img src="../../assets/images/pets/pets-jennifer.png" alt="Jennifer"> <p class="pets-name">Jennifer</p>
+                                    <button class="pets-button">Learn more</button>
+                                </div>
+                                <div class="pet_card hidden">
+                                    <img src="../../assets/images/pets/pets-woody.png" alt="Woody">
+                                    <p class="pets-name">Woody</p>
+                                    <button class="pets-button">Learn more</button>
+                                </div>
                             </div>
                             <!-- <div class="active-button"><button class="button_slider">&#8592;</button> </div> -->
-                            <div><button class="button_slider hidden">&#8594;</button> </div>
+                            <div class="btn-right"><button class="button_slider hidden">&#8594;</button> </div>
                             <div class="active-button">
-                                <div><button class="button_slider">&#8592;</button> </div>
-                                <div><button class="button_slider">&#8594;</button> </div>
+                                <div class="btn-left"><button class="button_slider">&#8592;</button> </div>
+                                <div class="btn-right"><button class="button_slider">&#8594;</button> </div>
                             </div>
                         </div>
                         <a href="../pets/pets_page.html"  class="pet-content_button">
@@ -138,26 +144,29 @@
         </section>
         <section>
             <div class="popup popup_hide">
-                <div class="popup_in">
-                    <div class="popup_img">
-                        <img class="pet_img" src="../../assets/images/pets/pets-jennifer.png" alt="">
-                    </div>
-                    <div class="popup_content">
-                        <div>
-                            <h3 class="name_pet">Jennifer</h3>
-                            <h4 class="type_breed">Dog - Labrador</h4>
+                <div class="popup_conteiner">
+                    <button class="popup_button">&times;</button>
+                    <div class="popup_in">
+                        <div class="popup_img">
+                            <img class="pet_img" src="../../assets/images/pets/pets-jennifer.png" alt="">
                         </div>
-                        <p class="descritpion">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
-                        <div>
-                            <ul>
-                                <li class="age"><b>Age:</b> 2 months</li>
-                                <li class="inoculations"><b>Inoculations:</b> none</li>
-                                <li class="diseases"><b>Diseases:</b> none</li>
-                                <li class="parasites"><b>Parasites:</b> none</li>
-                            </ul>
+                        <div class="popup_content">
+                            <div>
+                                <h3 class="name_pet">Jennifer</h3>
+                                <h4 class="type_breed">Dog - Labrador</h4>
+                            </div>
+                            <p class="descritpion">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+                            <div>
+                                <ul>
+                                    <li class="age"><b>Age:</b> 2 months</li>
+                                    <li class="inoculations"><b>Inoculations:</b> none</li>
+                                    <li class="diseases"><b>Diseases:</b> none</li>
+                                    <li class="parasites"><b>Parasites:</b> none</li>
+                                </ul>
+                            </div>
                         </div>
+    
                     </div>
-
                 </div>
             </div>
         </section>
