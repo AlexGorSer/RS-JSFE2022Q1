@@ -24,6 +24,10 @@ body {
     font-weight: $weight;
 }
 
+.navlogo{
+    display: none;
+}
+
 .popup{
     position: fixed;
     top: 0;
@@ -450,6 +454,15 @@ body {
     }
 }
 @media screen and (max-width: 700px){
+
+    .navlogo{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 3.6%;
+        right: 37%;
+
+    }
     .header {
         padding: 3rem 4.3rem 3rem 0rem;
         .header_nav_menu{
@@ -477,9 +490,7 @@ body {
            }
             
         }
-        .header_logo {
-            z-index: 100;
-        }
+
         .nav-conteiner {
             position: fixed;
             width: 100%;

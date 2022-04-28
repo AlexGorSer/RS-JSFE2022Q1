@@ -182,19 +182,17 @@ function searchDataPet(name) {
 // Carusel
 
 const btnLeft = document.querySelectorAll('.btn-left'),
-      petCardConteiner = document.querySelector('.pets_card-conteiner')
+      petCardConteiner = document.querySelectorAll('.pet_card'),
       btnRight = document.querySelectorAll('.btn-right');
-
-
 
       btnLeft.forEach(btn =>{
         btn.addEventListener('click', () => {
-
+          console.log(petCardConteiner);
         });
       });
 
       btnRight.forEach(btn =>{
         btn.addEventListener('click', () => {
-
+          console.log(petCardConteiner);
         });
       });

@@ -28,7 +28,9 @@ body {
 //     animation-name: move-right;
 //     animation-duration: 5s;
 // }
-
+.navlogo{
+    display: none;
+}
 .popup{
     position: fixed;
     top: 0;
@@ -783,15 +785,21 @@ body {
 
 @media screen and (max-width: 767px){
 
+    .navlogo{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 3.6%;
+        right: 37%;
+
+    }
+
     .wrapper{
         padding: 0rem 1rem 0rem 1rem;
     }
     .header {
         padding: 3rem 4.3rem 0rem 0rem;
-        
-        .header__logo {
-            z-index: 5;
-        }
+
         .nav-conteiner {
             position: fixed;
             width: 100%;

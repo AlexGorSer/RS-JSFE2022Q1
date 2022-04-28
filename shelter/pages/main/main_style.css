@@ -11,6 +11,10 @@ body {
   overflow: hidden;
 }
 
+.navlogo {
+  display: none;
+}
+
 .popup {
   position: fixed;
   top: 0;
@@ -941,14 +945,23 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .navlogo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 3.6%;
+    right: 37%;
+  }
   .wrapper {
     padding: 0rem 1rem 0rem 1rem;
   }
   .header {
     padding: 3rem 4.3rem 0rem 0rem;
-  }
-  .header .header__logo {
-    z-index: 5;
   }
   .header .nav-conteiner {
     position: fixed;
